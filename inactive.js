@@ -24,15 +24,16 @@ let minutesPassed = 0
 
 setInterval(function(){
     // please write your code here
+    // I have set ranged according to my understanding. It was a bit confusing
     minutesPassed +=1
     
-    if (minutesPassed >=10 && minutesPassed <=120 ){
+    if (minutesPassed >=60 && minutesPassed <=120 ){
         inactiveFirstStage()
-    } else if (minutesPassed >=180 && minutesPassed <=240 ){
+    } else if (minutesPassed >120 && minutesPassed <=180 ){
         inactiveSecondStage
-    } else if (minutesPassed >=300 && minutesPassed <=360 ){
+    } else if (minutesPassed >=240 && minutesPassed <=300 ){
         inactiveThirdStage
-    } else if (minutesPassed/1000 > 360){
+    } else if (minutesPassed/1000 > 300){
         minutesPassed = 0
     }
     
